@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431012EB210F0B1D0081E3E5 /* FocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 431012EA210F0B1D0081E3E5 /* FocusView.m */; };
+		431398ED2116F9C6007D5FFE /* VideoRecordDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 431398EC2116F9C6007D5FFE /* VideoRecordDelegate.m */; };
+		431398F02116F9DD007D5FFE /* QRCodeScanDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 431398EF2116F9DD007D5FFE /* QRCodeScanDelegate.m */; };
 		434332B621006ACA003CBD89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 434332B521006ACA003CBD89 /* AppDelegate.m */; };
 		434332BC21006ACA003CBD89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 434332BA21006ACA003CBD89 /* Main.storyboard */; };
 		434332BE21006AD4003CBD89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434332BD21006AD4003CBD89 /* Assets.xcassets */; };
@@ -14,14 +17,26 @@
 		434332C421006AD4003CBD89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 434332C321006AD4003CBD89 /* main.m */; };
 		434332CC21006CAF003CBD89 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 434332CB21006CAF003CBD89 /* MainViewController.m */; };
 		434332D221007094003CBD89 /* MarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 434332D121007094003CBD89 /* MarkView.m */; };
+		43601D8A21144C8B0043498B /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43601D8921144C8A0043498B /* PlayerView.m */; };
 		4368D0CE210093170061629E /* PhotoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368D0CD210093170061629E /* PhotoButton.m */; };
 		4368D0D12100934D0061629E /* VideoButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368D0D02100934D0061629E /* VideoButton.m */; };
 		4368D0D42100937F0061629E /* RewindButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368D0D32100937F0061629E /* RewindButton.m */; };
 		4368D0D7210093AD0061629E /* StopButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368D0D6210093AD0061629E /* StopButton.m */; };
-		4368D0DA2100B7360061629E /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4368D0D92100B7360061629E /* CameraViewController.m */; };
+		43DB9A32210997CA00741EBD /* SaveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DB9A31210997CA00741EBD /* SaveButton.m */; };
+		43DD1B632101B1CF00C3D2FA /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DD1B622101B1CF00C3D2FA /* CameraViewController.m */; };
+		43DD1B662101BA2100C3D2FA /* PhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DD1B652101BA2100C3D2FA /* PhotoCaptureDelegate.m */; };
+		43DD5ADB210719D800EC1182 /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43DD5ADA210719D800EC1182 /* beep.mp3 */; };
+		43DD5ADE21071F9000EC1182 /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43DD5ADD21071F9000EC1182 /* ScanView.m */; };
+		43FF2D8121041A13004AEFED /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FF2D8021041A13004AEFED /* PreviewView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		431012E9210F0B1D0081E3E5 /* FocusView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FocusView.h; sourceTree = "<group>"; };
+		431012EA210F0B1D0081E3E5 /* FocusView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FocusView.m; sourceTree = "<group>"; };
+		431398EB2116F9C6007D5FFE /* VideoRecordDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoRecordDelegate.h; sourceTree = "<group>"; };
+		431398EC2116F9C6007D5FFE /* VideoRecordDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecordDelegate.m; sourceTree = "<group>"; };
+		431398EE2116F9DD007D5FFE /* QRCodeScanDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeScanDelegate.h; sourceTree = "<group>"; };
+		431398EF2116F9DD007D5FFE /* QRCodeScanDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeScanDelegate.m; sourceTree = "<group>"; };
 		434332B121006ACA003CBD89 /* CustomCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		434332B421006ACA003CBD89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		434332B521006ACA003CBD89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,6 +49,8 @@
 		434332CB21006CAF003CBD89 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		434332D021007094003CBD89 /* MarkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkView.h; sourceTree = "<group>"; };
 		434332D121007094003CBD89 /* MarkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkView.m; sourceTree = "<group>"; };
+		43601D8821144C8A0043498B /* PlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		43601D8921144C8A0043498B /* PlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
 		4368D0CC210093170061629E /* PhotoButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoButton.h; sourceTree = "<group>"; };
 		4368D0CD210093170061629E /* PhotoButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoButton.m; sourceTree = "<group>"; };
 		4368D0CF2100934D0061629E /* VideoButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoButton.h; sourceTree = "<group>"; };
@@ -42,8 +59,18 @@
 		4368D0D32100937F0061629E /* RewindButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewindButton.m; sourceTree = "<group>"; };
 		4368D0D5210093AD0061629E /* StopButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StopButton.h; sourceTree = "<group>"; };
 		4368D0D6210093AD0061629E /* StopButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StopButton.m; sourceTree = "<group>"; };
-		4368D0D82100B7360061629E /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
-		4368D0D92100B7360061629E /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		43C26F8A2114852B00869CD1 /* CustomCameraDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCameraDelegate.h; sourceTree = "<group>"; };
+		43DB9A30210997CA00741EBD /* SaveButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveButton.h; sourceTree = "<group>"; };
+		43DB9A31210997CA00741EBD /* SaveButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveButton.m; sourceTree = "<group>"; };
+		43DD1B612101B1CF00C3D2FA /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		43DD1B622101B1CF00C3D2FA /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		43DD1B642101BA2100C3D2FA /* PhotoCaptureDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCaptureDelegate.h; sourceTree = "<group>"; };
+		43DD1B652101BA2100C3D2FA /* PhotoCaptureDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCaptureDelegate.m; sourceTree = "<group>"; };
+		43DD5ADA210719D800EC1182 /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		43DD5ADC21071F9000EC1182 /* ScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanView.h; sourceTree = "<group>"; };
+		43DD5ADD21071F9000EC1182 /* ScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanView.m; sourceTree = "<group>"; };
+		43FF2D7F21041A13004AEFED /* PreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewView.h; sourceTree = "<group>"; };
+		43FF2D8021041A13004AEFED /* PreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		433545D5211941B200CA21DF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				43DD1B642101BA2100C3D2FA /* PhotoCaptureDelegate.h */,
+				43DD1B652101BA2100C3D2FA /* PhotoCaptureDelegate.m */,
+				431398EB2116F9C6007D5FFE /* VideoRecordDelegate.h */,
+				431398EC2116F9C6007D5FFE /* VideoRecordDelegate.m */,
+				431398EE2116F9DD007D5FFE /* QRCodeScanDelegate.h */,
+				431398EF2116F9DD007D5FFE /* QRCodeScanDelegate.m */,
+				43C26F8A2114852B00869CD1 /* CustomCameraDelegate.h */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		434332A821006ACA003CBD89 = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +122,10 @@
 				434332B521006ACA003CBD89 /* AppDelegate.m */,
 				434332BA21006ACA003CBD89 /* Main.storyboard */,
 				434332BD21006AD4003CBD89 /* Assets.xcassets */,
+				43DD5ADA210719D800EC1182 /* beep.mp3 */,
 				434332C221006AD4003CBD89 /* Info.plist */,
 				434332CE2100701A003CBD89 /* Controllers */,
+				433545D5211941B200CA21DF /* Delegates */,
 				434332CF2100703C003CBD89 /* Views */,
 			);
 			path = CustomCamera;
@@ -102,8 +145,8 @@
 			children = (
 				434332CA21006CAF003CBD89 /* MainViewController.h */,
 				434332CB21006CAF003CBD89 /* MainViewController.m */,
-				4368D0D82100B7360061629E /* CameraViewController.h */,
-				4368D0D92100B7360061629E /* CameraViewController.m */,
+				43DD1B612101B1CF00C3D2FA /* CameraViewController.h */,
+				43DD1B622101B1CF00C3D2FA /* CameraViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -111,6 +154,14 @@
 		434332CF2100703C003CBD89 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				43FF2D7F21041A13004AEFED /* PreviewView.h */,
+				43FF2D8021041A13004AEFED /* PreviewView.m */,
+				43601D8821144C8A0043498B /* PlayerView.h */,
+				43601D8921144C8A0043498B /* PlayerView.m */,
+				43DD5ADC21071F9000EC1182 /* ScanView.h */,
+				43DD5ADD21071F9000EC1182 /* ScanView.m */,
+				431012E9210F0B1D0081E3E5 /* FocusView.h */,
+				431012EA210F0B1D0081E3E5 /* FocusView.m */,
 				434332D021007094003CBD89 /* MarkView.h */,
 				434332D121007094003CBD89 /* MarkView.m */,
 				4368D0CC210093170061629E /* PhotoButton.h */,
@@ -121,6 +172,8 @@
 				4368D0D32100937F0061629E /* RewindButton.m */,
 				4368D0D5210093AD0061629E /* StopButton.h */,
 				4368D0D6210093AD0061629E /* StopButton.m */,
+				43DB9A30210997CA00741EBD /* SaveButton.h */,
+				43DB9A31210997CA00741EBD /* SaveButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +237,7 @@
 			files = (
 				434332C121006AD4003CBD89 /* LaunchScreen.storyboard in Resources */,
 				434332BE21006AD4003CBD89 /* Assets.xcassets in Resources */,
+				43DD5ADB210719D800EC1182 /* beep.mp3 in Resources */,
 				434332BC21006ACA003CBD89 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,13 +249,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43DD1B662101BA2100C3D2FA /* PhotoCaptureDelegate.m in Sources */,
+				43FF2D8121041A13004AEFED /* PreviewView.m in Sources */,
 				434332C421006AD4003CBD89 /* main.m in Sources */,
 				4368D0D7210093AD0061629E /* StopButton.m in Sources */,
+				43DD5ADE21071F9000EC1182 /* ScanView.m in Sources */,
 				4368D0D12100934D0061629E /* VideoButton.m in Sources */,
+				43601D8A21144C8B0043498B /* PlayerView.m in Sources */,
+				431398ED2116F9C6007D5FFE /* VideoRecordDelegate.m in Sources */,
+				43DB9A32210997CA00741EBD /* SaveButton.m in Sources */,
 				4368D0D42100937F0061629E /* RewindButton.m in Sources */,
 				434332B621006ACA003CBD89 /* AppDelegate.m in Sources */,
+				43DD1B632101B1CF00C3D2FA /* CameraViewController.m in Sources */,
 				434332CC21006CAF003CBD89 /* MainViewController.m in Sources */,
-				4368D0DA2100B7360061629E /* CameraViewController.m in Sources */,
+				431012EB210F0B1D0081E3E5 /* FocusView.m in Sources */,
+				431398F02116F9DD007D5FFE /* QRCodeScanDelegate.m in Sources */,
 				4368D0CE210093170061629E /* PhotoButton.m in Sources */,
 				434332D221007094003CBD89 /* MarkView.m in Sources */,
 			);

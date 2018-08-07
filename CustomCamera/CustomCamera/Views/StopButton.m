@@ -27,6 +27,9 @@
     CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
     CGContextFillPath(context);
     
+    CGPathRelease(circlePath);
+    CGPathRelease(roundedRectPath);
+    
     //    // create with bezier path
     //    CGMutablePathRef circlepath = CGPathCreateMutable();
     //    CGPathAddArc(circlepath, NULL, center.x, center.y, radius * 0.4, 0, M_PI * 2, 1);
