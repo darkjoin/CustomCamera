@@ -55,6 +55,11 @@
 @property (nonatomic, strong) UIButton *cancelButton;
 @property (nonatomic, strong) UIButton *shareButton;
 
+@property (nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
+@property (nonatomic, strong) UIPinchGestureRecognizer *pinchGestureRecognizer;
+@property (nonatomic, strong) UISwipeGestureRecognizer *swipeRightGestureRecognizer;
+@property (nonatomic, strong) UISwipeGestureRecognizer *swipeLeftGestureRecognizer;
+
 @property (nonatomic, strong) NSArray *itemsArray;
 @property (nonatomic, strong) NSMutableArray *captureButtonsArray;
 
@@ -121,20 +126,20 @@
 
 - (void)addGestureRecognizers
 {
-    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(focusAndExposureTap:)];
-    [self.view addGestureRecognizer:tapGestureRecognizer];
+    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(focusAndExposureTap:)];
+    [self.view addGestureRecognizer:self.tapGestureRecognizer];
     
-    UIPinchGestureRecognizer *pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchGesture:)];
-    pinchGestureRecognizer.delegate = self;
-    [self.view addGestureRecognizer:pinchGestureRecognizer];
+    self.pinchGestureRecognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchGesture:)];
+    self.pinchGestureRecognizer.delegate = self;
+    [self.view addGestureRecognizer:self.pinchGestureRecognizer];
     
-    UISwipeGestureRecognizer *swipeRightGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeToRightWithGestureRecognizer:)];
-    swipeRightGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
-    [self.view addGestureRecognizer:swipeRightGestureRecognizer];
+    self.swipeRightGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeToRightWithGestureRecognizer:)];
+    self.swipeRightGestureRecognizer.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:self.swipeRightGestureRecognizer];
     
-    UISwipeGestureRecognizer *swipeLeftGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeToLeftWithGestureRecognizer:)];
-    swipeLeftGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
-    [self.view addGestureRecognizer:swipeLeftGestureRecognizer];
+    self.swipeLeftGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeToLeftWithGestureRecognizer:)];
+    self.swipeLeftGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:self.swipeLeftGestureRecognizer];
 }
 
 #pragma mark Toggle Actions
@@ -320,6 +325,8 @@
     [self.imageView removeFromSuperview];
     [self.playerView removeFromSuperview];
     [self.saveView removeFromSuperview];
+    
+    [self enableGestureRecognizers];
 }
 
 - (void)cancel:(UIButton *)cancelButton
@@ -329,6 +336,8 @@
     [self.imageView removeFromSuperview];
     [self.playerView removeFromSuperview];
     [self.saveView removeFromSuperview];
+    
+    [self enableGestureRecognizers];
 }
 
 - (void)share:(UIButton *)shareButton
@@ -453,6 +462,8 @@
 
 - (void)prepareUIForSaving
 {
+    [self disableGestureRecognizers];
+    
     [self setupSaveView];
     
     if (self.cameraViewController.captureMode == CaptureModePhoto) {
@@ -586,6 +597,22 @@
     [alertController addAction:okAction];
     
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void)enableGestureRecognizers
+{
+    self.tapGestureRecognizer.enabled = YES;
+    self.pinchGestureRecognizer.enabled = YES;
+    self.swipeRightGestureRecognizer.enabled = YES;
+    self.swipeLeftGestureRecognizer.enabled = YES;
+}
+
+- (void)disableGestureRecognizers
+{
+    self.tapGestureRecognizer.enabled = NO;
+    self.pinchGestureRecognizer.enabled = NO;
+    self.swipeRightGestureRecognizer.enabled = NO;
+    self.swipeLeftGestureRecognizer.enabled = NO;
 }
 
 - (void)setImageForLivePhotoButton
