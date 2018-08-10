@@ -10,13 +10,11 @@
 
 ### 1 拍照
 
-![](READMEImages/photoMode.png)  ![](READMEImages/photoPortrait.PNG)![](READMEImages/photoLandscape.png) ![](READMEImages/share.png)
+![](READMEImages/photoMode.PNG) ![](READMEImages/photoPortrait.PNG) ![](READMEImages/photoLandscape.PNG)
 
 ### 2 拍视频
 
-![](READMEImages/videoMode.png) ![](READMEImages/normalVideo.gif)	
-
-
+![](READMEImages/videoMode.PNG) ![](READMEImages/normalvideo.gif) ![](READMEImages/share.PNG)
 
 ### 3 拍倒播
 
@@ -24,4 +22,4 @@
 
 ### 4 扫描二维码
 
-![](READMEImages/scanQRCodeMode.png) ![](READMEImages/displayQRCodeMessage.png)
+![](READMEImages/scanQRCodeMode.PNG) ![](READMEImages/displayQRCodeMessage.PNG)
