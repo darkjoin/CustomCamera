@@ -457,7 +457,7 @@
     self.albumButton.hidden = !(captureMode == CaptureModeScanQRCode);
     self.scanView.hidden = !(captureMode == CaptureModeScanQRCode);
     
-    captureMode == CaptureModeScanQRCode ? [self setupMaskKayer] : [self.maskLayer removeFromSuperlayer];
+    captureMode == CaptureModeScanQRCode ? [self setupMaskLayer] : [self.maskLayer removeFromSuperlayer];
 }
 
 - (void)prepareUIForSaving
@@ -732,7 +732,7 @@
     [self addPlayerViewConstraints];
 }
 
-- (void)setupMaskKayer
+- (void)setupMaskLayer
 {
     self.maskLayer = [[CALayer alloc] init];
     self.maskLayer.frame = self.previewView.bounds;

@@ -314,7 +314,7 @@ typedef NS_ENUM(NSInteger, SetupResult) {
             [self.captureSession commitConfiguration];
         });
     }
-    else if (captureMode == CaptureModeVideo | captureMode == CaptureModeRewind) {
+    else if (captureMode == CaptureModeVideo || captureMode == CaptureModeRewind) {
         self.torchMode = AVCaptureTorchModeOff;
         
         dispatch_async(self.sessionQueue, ^{
@@ -887,7 +887,7 @@ typedef NS_ENUM(NSInteger, SetupResult) {
     [writerInput setExpectsMediaDataInRealTime:NO];
     writerInput.transform = videoTrack.preferredTransform;
     
-    // initialize an input adaptor so that we can append picelBuffer
+    // initialize an input adaptor so that we can append pixelBuffer
     AVAssetWriterInputPixelBufferAdaptor *pixelBufferAdaptor = [[AVAssetWriterInputPixelBufferAdaptor alloc] initWithAssetWriterInput:writerInput sourcePixelBufferAttributes:nil];
     [writer addInput:writerInput];
     
